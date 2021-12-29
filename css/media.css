@@ -1,0 +1,26 @@
+@media (min-width: 340px) {
+    form {
+        padding: 0.2rem;
+    }
+    .container {
+        max-width: 340px;
+    }
+}
+@media (min-width: 480px) {
+    form {
+        padding: 0.5rem;
+    }
+    .container {
+        max-width: 470px;
+    }
+}
+@media (min-width: 567px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}

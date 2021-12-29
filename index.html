@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center" id="title">Register for purchase a PS5™ console</h1>
+            <p class="text-center description" id="description">
+                Please make sure your email address is the one associated with your PSN
+                ID.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">* Name</label>
+                <input type="text" name="name" id="name" class="form-control" required placeholder="Enter your name" />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">* Email</label>
+                <input type="email" name="email" id="email" class="form-control" required placeholder="Enter your email address" />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="password">* Password</label>
+                <input type="password" name="password" id="password" class="form-control" required placeholder="Enter your password" />
+            </div>
+
+            <div class="form-group">
+                <label id="age-label" for="age">Age</label>
+                <input type="number" name="age" class="form-control" id="number" min="7" max="88" placeholder="Enter your age" />
+            </div>
+
+            <div class="form-group">
+                <p>* Choose Your Console Version</p>
+                <select name="version" id="dropdown" class="form-control" required>
+                    <option selected disabled value>Select one of the two offered models</option>
+                    <option value="blu-ray">PlayStation®5 Console</option>
+                    <option value="digital">PlayStation®5 Digital Edition Console</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>* Choose Your Color</p>
+                <label>
+                    <input class="input-radio" type="radio" name="color" value="black"
+                    checked />PS5™ Console Covers - Midnight Black
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="color" value="red"
+                    />PS5™ Console Covers – Cosmic Red
+                </label>                          
+            </div>
+
+            <div class="form-group">
+                <p>Add PlayStation®5 Accessories</p>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="controller"/>
+                    DualSense™ Wireless Controller
+                </label>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="charging-station"/>
+                    DualSense™ Charging Station
+                </label>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="headset"/>
+                    PULSE 3D™ Wireless Headset
+                </label>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="plus"/>
+                    PlayStation® Plus Subscription
+                </label>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="hd-camera"/>
+                    PlayStation® HD Camera
+                </label>
+                <label>
+                    <input name="accessories" class="input-checkbox" type="checkbox" value="media-remote"/>
+                    PlayStation® Media Remote
+                </label>
+            </div>
+        
+            <div class="form-group">
+                <p>Any Comments or Suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
